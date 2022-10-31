@@ -62,11 +62,17 @@
 
 @media(max-width: 1064px) {
   .carts {
-    .wrapper {
-      .images {
-        flex-wrap: wrap;
-        .img:last-child{
-          width: 100%;
+    .container{
+      .wrapper {
+        .images {
+          flex-wrap: wrap;
+          .img{
+            min-height: 210px;
+            width: 46%;
+          }
+          .img:last-child{
+            width: 100%;
+          }
         }
       }
     }
