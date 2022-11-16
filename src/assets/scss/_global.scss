@@ -11,7 +11,6 @@
   margin:      0;
   padding:     0;
   font-family: 'Apercu', sans-serif; // TODO: for example
-  transition:  all linear 0.3s;
 }
 
 html,
@@ -55,10 +54,7 @@ main {
 
 .container {
   width:     100%;
-  max-width: 1450px;
-  padding:   0 15px;
   margin:    0 auto;
-  position:  relative;
 }
 
 

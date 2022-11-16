@@ -1,98 +1,67 @@
 .carts {
-  width: 100vw;
   background-color: #8DBFC9;
+  overflow: hidden;
 
   .container {
-    width: 88%;
-    padding: 0;
-
-    .wrapper {
-
-      min-height: 370px;
-
+    max-width:   1260px;
+    padding: 0 15px;
 
       .figure {
-        display: block;
+        display:  block;
         position: absolute;
-        z-index: 1;
-
+        z-index:  1;
         &:first-child {
-          min-height: 159px;
-          min-width: 366px;
-          height: 10%;
-          width: 20%;
-          top: -10px;
-          left: -169px;
+          //min-width:  366px;
+          width:      30%;
+          top:        -10px;
+          left:       -169px;
         }
 
         &:last-child {
-          min-height: 155px;
-          min-width: 300px;
-          height: 10%;
           width: 20%;
-          bottom: 2px;
-          right: -115px;
+          bottom:     2px;
+          right:      0;
         }
       }
-
-
       .images {
-        width: 100%;
-        height: 60%;
-        display: flex;
+        width:           100%;
+        display:         flex;
         justify-content: space-between;
-        padding: 75px 0;
-        position: relative;
-        top: 0;
-        left: 0;
-        z-index: 2;
-
+        padding:         75px 0;
+        position:        relative;
+        top:             0;
+        left:            0;
+        z-index:         2;
         .img {
-          width: 32%;
-          height: 60%;
-          min-width: 286px;
-          min-height: 190px;
-          margin: 20px;
-          background-color: white;
+          width:        32%;
         }
       }
     }
   }
-}
 
-@media(max-width: 1064px) {
+@media(max-width: 1024px) {
   .carts {
-    .container{
-      .wrapper {
-        .images {
-          flex-wrap: wrap;
-          .img{
-            min-height: 210px;
-            width: 45%;
-            margin: 15px;
-          }
-          .img:last-child{
-            width: 100%;
-          }
+    .container {
+      padding: 0 25px;
+      .figure{
+        &:first-child{
+          width: 60%;
+        }
+        &:last-child{
+          min-width: 50%;
+        }
+      }
+      .images {
+        flex-wrap: wrap;
+          justify-content: center;
+        .img {
+          width: 100%;
+        }
+        .img:not(.img:last-child){
+          margin-bottom: 15px;
         }
       }
     }
   }
 }
 
-@media(max-width: 768px){
-  .carts{
-    .container{
-      .wrapper{
-        .images{
-        padding: 10% 10%;
-          .img{
-          min-width: 200px;
-          min-height: 150px;
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
